@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useAppDispatch, useAppSelector } from './hooks/use-redux'
 import { createTodo, deleteTodo, toggleTodo } from './store/slices/todos'
 import Users from './components/Users'
+import Posts from './components/Posts'
 
 const App = () => {
   const [value, setValue] = useState('')
@@ -43,7 +44,8 @@ const App = () => {
         ))}
       </ul>
 
-      <Users />
+      {/* <Users /> */}
+      <Posts />
     </div>
   )
 }
